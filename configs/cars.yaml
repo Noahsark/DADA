@@ -1,0 +1,15 @@
+# parameters for cars
+dataset: "cars196"
+n_epochs: 60
+fd2_bn: true
+d_dis_ratio: 0.01
+decay: 0.0001
+augmentation: auto
+lr: 0.00012
+lr_reduce_step: 10
+mix_alpha: 2
+mix_beta: 1
+oproxy_ratio: 0.0075
+warmup: 5
+evaluation_metrics: ['e_recall@1', 'e_recall@2', 'e_recall@4', 'f1', 'mAP_R']
+store_improvements: true

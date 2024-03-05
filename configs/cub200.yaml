@@ -1,0 +1,21 @@
+# parameters for cub
+dataset: "cub200"
+pos_class_mix: true
+batch_size: 90
+n_epochs: 80
+lr: 0.00012
+fd2_bn: true
+fc2_bn: true
+n_epochs: 60
+d_dis_ratio: 0.005
+decay: 0.0001
+dis_decay: 0.0004
+loss_oproxy_pos_alpha: 40
+loss_oproxy_neg_alpha: 100
+lr_reduce_step: 4
+lr_reduce_rate: 0.45
+mix_alpha: 3
+mix_beta: 0.5
+oproxy_ratio: 0.0075
+evaluation_metrics: ['e_recall@1', 'e_recall@2', 'e_recall@4', 'f1', 'mAP_R']
+store_improvements: true

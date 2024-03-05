@@ -1,0 +1,23 @@
+# for inshop
+dataset: "inshop"
+n_epochs: 200
+batch_size: 180
+fd2_bn: true
+fc2_bn: true
+pos_class_mix: true
+arch: resnet50_layernorm_double
+d_dis_ratio: 0.01
+decay: 0.0001
+dis_decay: 0.00005
+fc_fc2_dim: 4096
+fd_fc1_dim: 512
+loss_oproxy_neg_alpha: 200
+loss_oproxy_pos_alpha: 40
+lr: 0.00012
+lr_reduce_rate: 0.25
+lr_reduce_step: 40
+oproxy_ratio: 0.0075
+mix_alpha: 3
+mix_beta: 3
+warmup: 5
+store_improvements: true

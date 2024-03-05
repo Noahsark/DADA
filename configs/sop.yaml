@@ -1,0 +1,24 @@
+# for sop
+dataset: "online_products"
+n_epochs: 200
+batch_size: 180
+d_dis_ratio: 0.05
+decay: 0.00005
+lr: 0.00012
+dis_decay: 0.0001
+fc_fc1_dim: 1024
+fc_fc2_dim: 8192
+fd_fc1_dim: 128
+loss_oproxy_neg_alpha: 200
+loss_oproxy_pos_alpha: 100
+lr_reduce_rate: 0.1
+lr_reduce_step: 20
+mix_alpha: 2
+mix_beta: 5
+oproxy_ratio: 0.03
+pos_class_mix: true
+fd2_bn: true
+scheduler: "multi"
+arch: resnet50_layernorm_double
+evaluation_metrics: ['e_recall@1', 'e_recall@10', 'e_recall@100']
+store_improvements: true

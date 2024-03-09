@@ -72,18 +72,18 @@ $HOME/data/
 Start to run the training procedure with following command:
 
 ```Bash
-python main.py --source_path {data_path} \
---save_path {save_path} \
---save_name {save_name} \
---config {config_path} \
---gpu {gpu_id}
+python main.py --source_path ${data_path} \
+--save_path ${save_path} \
+--save_name ${save_name} \
+--config ${config_path} \
+--gpu ${gpu_id}
 ```
 
-**`{data_path}`** is the root of your dataset.\
-**`{save_path}`** is the path to save essential data and checkpoints.\
-**`{save_name}`** is the name of this config_pathrun
-**`{config_path}`** is the path of configure file that save specific hyper-parameters.\
-**`{gpu_id}`** is the index of your GPU starting from 0
+**`data_path`** is the root of your dataset.\
+**`save_path`** is the path to save essential data and checkpoints.\
+**`save_name`** is the name of this config_pathrun
+**`config_path`** is the path of configure file that save specific hyper-parameters.\
+**`gpu_id`** is the index of your GPU starting from 0
 
 For example, to train a model from CUB200 on GPU 0
 
@@ -102,16 +102,16 @@ You can also create your own training config by editing or creating files in ./c
 To evaluate the pre-trained model, run following script:
 
 ```Bash
-python eval.py --source_path {data_path} \
---dataset {data_name} \
---test_path {checkpoint_path} \
---evaluation_metrics {metrics}
+python eval.py --source_path ${data_path} \
+--dataset ${data_name} \
+--test_path ${checkpoint_path} \
+--evaluation_metrics ${metrics}
 ```
 
-**`{data_path}`** is the root of your dataset.\
-**`{data_name}`** is the name of dataset (cub200, cars196, online_products, inshop).\
-**`{checkpoint_path}`** is the path of your pre-trained checkpoint \
-**`{metrics}`** is the list of evaluation metrics
+**`data_path`** is the root of your dataset.\
+**`data_name`** is the name of dataset (cub200, cars196, online_products, inshop).\
+**`checkpoint_path`** is the path of your pre-trained checkpoint \
+**`metrics`** is the list of evaluation metrics
 
 For example,
 ```Bash

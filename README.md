@@ -55,13 +55,21 @@ The datasets should be unpacked and placed in a distinct folder. An illustration
 $HOME/data/
 ├── cars196
 │   └── images
+|        ├── Acura Integra Type R 2001
+|       ... 
+|
 ├── cub200
 │   └── images
+|        ├── 001.Black_footed_Albatross
+|        ...
 ├── inshop
 │   └── img
+|        ├── ...
 |   └── list_eval_partition.txt
 ├── online_products
 │   ├── images
+│   │   ├── bicycle_final
+|   |   ....
 │   └── Info_Files
 
 ```
